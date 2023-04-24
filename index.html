@@ -3,86 +3,89 @@
 <!doctype html>
 
 <html lang="en">
-
   <head>
-
     <meta charset="utf-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1">
+     <title>Bootstrap demo</title>
+     <link href=https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+       <style>
+        .nav-bg-color{
+          background-color: rgb(138, 184, 199);
+         }
 
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+         .centerNav{
+            text-align: center;
+         }
 
-    <title>Photography Art Gallery | Shayanny</title>
+        .home-images{
 
-    <link href=https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
-
-        <style>
-
-            .myown{
-
-              background-color: rgb(138, 184, 199);
-
-                }
-
-          </style>
-
-   
-
-  </head>
-
-  <body>
-
-    <!-- The Navigation bar was coded by Fionn McGoldrick on the 24th of April 2023.-->
-
-<nav class="navbar navbar-expand-lg myown">
-
-  <div class="container-fluid">
-
-    <a class="navbar-brand" href="#">Navbar</a>
-
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-
-      <span class="navbar-toggler-icon"></span>
-
-    </button>
-
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-
-      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-
-        <li class="nav-item">
-
-          <a class="nav-link active" aria-current="page" href="#">Home</a>
-
-        </li>
-
-        <li class="nav-item">
-
-          <a class="nav-link" href="#">Link</a>
-
-        </li>
-
+          width: 50px;
+          length: 700px;
+        }
         
-        <li class="nav-item">
+       </style>
+ </head>
+ <body>
+  <!-- The Navigation bar was coded by Fionn McGoldrick on the 24th of April 2023.-->
 
-          <a class="nav-link" href="#">Gallery</a>
+    <!-- Test Case: I Struggled to remove the dropdown option provided from Boostrap without affecting the background color of the navigation bar.
+    Through trial and error I managed to remove it correctly.-->
+    <nav class="navbar navbar-expand-lg nav-bg-color">
+     <div class="container-fluid">
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+           <li class="nav-item">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+               <li class="nav-item">
+                  <a class="nav-link" href="gallery.html">Gallery</a>
+                    </li>
+                      <li class="nav-item">
+                          <a class="nav-link"> Cart</a>
+                      </li>
+                      <li class = "nav-item">
+                        <a class = "nav-link"> About Us </a>
 
-        </li>
+                      </li>
+                   </ul>
+               </div>
+      </div>
+    </nav>
 
-       </ul>
+    <!-- The Carousel feature was coded by Fionn McGoldrick on the 24th of April 2023!-->
+    <br>
+    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+      <ol class="carousel-indicators">
+        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+      </ol>
+      <div class="carousel-inner">
+        <div class="carousel-item active ">
 
+          <!-- Test Case: It took me a while to realise the class "w-100" was a class set by Boostrap-->
+          <img class="d-block  home-images" src="img/Foto 2023-04-24 01.54.04 PM.jpg" alt="First slide">
+        </div>
+        <div class="carousel-item">
+          <img class="d-block home-images" src="img/3D26C00D-EE77-4AC9-AE3B-9F02D6F35109.jpg" alt="Second slide">
+        </div>
+        <div class="carousel-item">
+          <img class="d-block home-images" src="img/84B5FD03-46E2-4417-BEC7-63174788E2E9.jpg" alt="Third slide">
+        </div>
+      </div>
+      <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
     </div>
 
-  </div>
 
-</nav>
-
-    <script src=https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
-
+      <script src=https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous">
+    </script>
   </body>
-
 </html>
   
-
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
-  </body>
-</html>
