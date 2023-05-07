@@ -15,25 +15,46 @@
 
     <!-- Test Case: I Struggled to remove the dropdown option provided from Boostrap without affecting the background color of the navigation bar.
     Through trial and error I managed to remove it correctly.-->
-    <nav class="navbar navbar-expand-lg nav-bg-color">
+    <!--<nav class="navbar navbar-expand-lg nav-bg-color ">
      <div class="container-fluid" id ="to-top">
-      <div id="navbarSupportedContent">
+      <div id="navbarSupportedContent collapse navbar-collapse">
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-           <li class="nav-item">
-             <i> <a class="nav-link nav-font" href="index.html">Home</a></i>
-            </li>
-               <li class="nav-item">
-                <i><a class="nav-link nav-font" href="gallery.html">Gallery</a></i>
-                    </li>
-                      <li class="nav-item">
-                        <i>   <a class="nav-link nav-font"> Cart</a></i>
-                      </li>
-                      <li class = "nav-item">
-                      <i><a class = "nav-link nav-font"> About Us </a></i>
+          <li class="nav-item">
+            <i> <a class="nav-link nav-font" href="index.html">Home</a></i>
+          </li>
+          <li class="nav-item">
+            <i><a class="nav-link nav-font" href="gallery.html">Gallery</a></i>
+          </li>
+          <li class="nav-item">
+            <i><a class="nav-link nav-font" href="cart.html"> Cart</a></i>
+          </li>
+           </ul>
+        </div>
+      </div>
+    </nav>-->
 
-                      </li>
-                   </ul>
-               </div>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <div class="container-fluid">
+        <ul class="navbar-nav">
+          <a class="navbar-brand" href="index.html">
+            <img src="img/images.png" alt="Logo" width="30" height="24" class="d-inline-block align-text-top nav-image" 
+            > </a>
+            <h1 class ="logo-text" style="color:white"> Shayanny Photography </h1>
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="index.html" style="color:white">Home</a>
+        </li>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <li class="nav-item">
+              <a class="nav-link active " aria-current="page" href="gallery.html "  style="color:white">Gallery</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="cart.html"  style="color:white"> Cart</a>
+            </li>
+          </ul>
+        </div>
       </div>
     </nav>
 
@@ -42,27 +63,46 @@
        <!-- For this section, made by Fionn, I found a very useful YouTube video by Web Dev Simplified to
     help me through some steps I struggled with. Link: https://www.youtube.com/watch?v=9HcxHDS2w1s&t=188s&ab_channel=WebDevSimplified-->
 
-    <div id="carouselExample" class="carousel slide">
-      <div class="carousel-inner">
-        <div class="carousel-item active carousel-image-details ">
-          <img src="img/Foto 2023-04-24 01.54.04 PM.jpg" class="d-block w-100 carousel-image-border" alt="First Slide" >
+    <div id="ourCarousel" class="carousel slide carousel-fade">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#ourCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#ourCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#ourCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      </div>
+      <div class="carousel-inner carousel-image-details"  data-bs-ride="carousel">
+        <div class="carousel-item active carousel-image-details">
+          <img src="img/84B5FD03-46E2-4417-BEC7-63174788E2E9.jpeg" class="d-block w-100" alt="First Slide">
+          <div class="carousel-caption d-none d-md-block">
+            <h5 class = "carousel-text">Experience Bliss.</h5>
+            <button id="carousel-button" class="carousel-button">Click & Purchase!</button>
+          </div>
         </div>
         <div class="carousel-item carousel-image-details">
-          <img src="img/84B5FD03-46E2-4417-BEC7-63174788E2E9.jpeg" class="d-block w-100" alt="Second Slide">
+          <img src="img/746843E3-EECD-4DF0-A276-5FFC6AF3023B.jpeg" class="d-block w-100" alt="Second Slide">
+          <div class="carousel-caption d-none d-md-block">
+            <h5 class = "carousel-text">Abudance of Magic!</h5>
+            <button id="carousel-button" class="carousel-button">Click & Purchase!</button>
+          </div>
         </div>
         <div class="carousel-item carousel-image-details">
-          <img src="img/746843E3-EECD-4DF0-A276-5FFC6AF3023B.jpeg" class="d-block w-100" alt="Third Slide">
+          <img src="img/3D26C00D-EE77-4AC9-AE3B-9F02D6F35109.jpeg" class="d-block w-100" alt="Third Slide">
+          <div class="carousel-caption d-none d-md-block">
+            <h5 class = "carousel-text">Click & Collect, simple as that!</h5>
+            <button id="carousel-button" class="carousel-button">Click & Purchase!</button>
+          </div>
         </div>
       </div>
-      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+      <button class="carousel-control-prev" type="button" data-bs-target="#ourCarousel" data-bs-slide="prev">
         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
         <span class="visually-hidden">Previous</span>
       </button>
-      <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+      <button class="carousel-control-next" type="button" data-bs-target="#ourCarousel" data-bs-slide="next">
         <span class="carousel-control-next-icon" aria-hidden="true"></span>
         <span class="visually-hidden">Next</span>
       </button>
     </div>
+
+
 
     
 
@@ -71,26 +111,19 @@
     <!--Placeholder One-->
     <div class="card">
       <img class = "placeholder1-img" src="img/4488BB4C-7218-4921-B368-D1357AFB8FE8.jpeg"  alt="placeholder1"> 
-      <p class="card-text">Incert Text</p>
-      <a href="#" class="btn btn-primary">Go somewhere</a>
+      <p class="placeholder-font card-text">"You dont take a photograph,<br> you make it." </p>
+    
     
       <div class="card-body">
-       
-      <!-- <h5 class="card-title">Card title</h5>-->
-      </div>
     </div>
 
     
     <!--Placeholder Two-->
-    <div class="card">
-      <img class = "placeholder2-img" src="img/CA0F80B5-6004-438D-ACAF-A342354F3E83.jpeg"  alt="placeholder2"> 
-      <!--<p class="card-text">Incert Text</p>
-      <a href="#" class="btn btn-primary">Go somewhere</a>-->
-    
-      <div class="card-body">
-       
-      <!-- <h5 class="card-title">Card title</h5>-->
-      </div>
+    <div class="card placeholder-layout">
+      <img class = "placeholder2-img"  src="img/CA0F80B5-6004-438D-ACAF-A342354F3E83.jpeg"  alt="placeholder2"> 
+      <p class="placeholder-font card-text-two">"A photograph, <br>is the pause button of life." </p>
+
+      
     </div>
    
    
@@ -114,4 +147,7 @@
     </script>
   </body>
 </html>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Acme&family=Bevan&family=Instrument+Serif&family=Open+Sans:wght@300&display=swap');
+</style>
   
