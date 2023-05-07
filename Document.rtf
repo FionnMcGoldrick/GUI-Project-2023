@@ -1,0 +1,238 @@
+{\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil\fcharset0 Calibri;}}
+{\*\generator Riched20 10.0.19041}\viewkind4\uc1 
+\pard\sa200\sl276\slmult1\f0\fs22\lang9 HTML \par
+<!doctype html>\par
+<html lang="en">\par
+  <head>\par
+    <!-- Required meta tags -->\par
+    <meta charset="utf-8">\par
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">\par
+\par
+    <!-- Bootstrap CSS -->\par
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">\par
+    <link rel="stylesheet" href="../css/styles.css">\par
+\par
+    <title>Java Cafe and Restaurant/home</title>\par
+  </head>\par
+    <body>\par
+    <!-- Navbar for easy use - Fionn McCarthy -->\par
+    <div class="pt-2">\par
+        <nav class="navbar navbar-expand-sm navbar-white bg-white">\par
+            <img class="d-inline-block align-top" src="../images/java_logo.jpg" alt="logo" height="60" width="60"/>\par
+            <div class="collapse navbar-collapse" id="navigation">\par
+                <ul class="navbar-nav">\par
+                    <li class="nav-item active"><a class="nav-link" href="./index.html">Home</a></li>\par
+                    <li class="nav-item"><a class="nav-link" href="./menu.html">Menu</a></li>\par
+                    <li class="nav-item "><div class="nav-link active">Click and Collect</div></li>\par
+                </ul>\par
+            </div>\par
+        </nav>\par
+    </div>\par
+\par
+    <!--      Adam Gallagher      -->\par
+\par
+    <style>\par
+        .container\{\par
+                    display: grid;\par
+                    grid-template-columns: 75% 55%;\par
+                    grid-gap: 60px;\par
+                    margin: 0px;\par
+                  \}\par
+\par
+    </style>\par
+\par
+    <br>\par
+\par
+    <br>\par
+    <div class="container">\par
+        <div><div class="row">\par
+            <div class="col-4">\par
+              <div id="list-example" class="list-group">\par
+                <a class="list-group-item list-group-item-action bg-primary" href="#list-item-1" style="opacity: .7; color: #000;">Food</a>\par
+                <a class="list-group-item list-group-item-action bg-primary" href="#list-item-4" style="opacity: .8; color: #000;">Special</a>\par
+                <a class="list-group-item list-group-item-action bg-primary" href="#list-item-5" style="opacity: .9; color: #000;">Drink</a>\par
+                <a class="list-group-item list-group-item-action bg-primary" href="#list-item-8" style="color: #000;">Desserts</a>\par
+              </div>\par
+            </div>\par
+            <div class="col-8" style="height: 750px;overflow-y: scroll;">\par
+              <div data-bs-spy="scroll" data-bs-target="#list-example" data-bs-smooth-scroll="true" class="scrollspy-example" tabindex="0">\par
+    \par
+                <h4 id="list-item-1">\par
+                    Grilled Cheese Sandwich \par
+                    <div class="btn-group" role="group" aria-label="Basic example">\par
+                    <button type="button" class="btn btn-primary" onclick="item_remove_dish1(),update_cost()">-</button>\par
+                    <div class="btn btn-primary" id="item1">0</div>\par
+                    <button type="button" class="btn btn-primary" onclick="item_add_dish1(),update_cost()">+</button>\par
+                  </div>\par
+                </h4>\par
+                <h6>\'802.99</h6>\par
+                <img src="../images/menu_images/grilled_cheese_sandwich.png" alt="Soup Picture" width="200px">\par
+                <p>Our tasty tasty meals are all homemade in house today, <i>if you have any allergy requirements please contact a member of staff for more information</i></p>\par
+\par
+                <h4 id="list-item-2">\par
+                  Grilled Chicken Sandwich\par
+                  <div class="btn-group" role="group" aria-label="Basic example">\par
+                  <button type="button" class="btn btn-primary" onclick="item_remove_dish2(),update_cost()">-</button>\par
+                  <div class="btn btn-primary" id="item2">0</div>\par
+                  <button type="button" class="btn btn-primary" onclick="item_add_dish2(),update_cost()">+</button>\par
+                  </div>\par
+                </h4>\par
+                <h6>\'805.99</h6>\par
+                <img src="../images/menu_images/grilled_chicken_sandwich.png" alt="Soup Picture" width="200px">\par
+                <p>Our tasty tasty meals are all homemade in house today, <i>if you have any allergy requirements please contact a member of staff for more information</i></p>          \par
+\par
+                <h4 id="list-item-3">\par
+                  Ham and Cheese Sandwich\par
+                  <div class="btn-group" role="group" aria-label="Basic example">\par
+                  <button type="button" class="btn btn-primary" onclick="item_remove_dish3(),update_cost()">-</button>\par
+                  <div class="btn btn-primary" id="item3">0</div>\par
+                  <button type="button" class="btn btn-primary" onclick="item_add_dish3(),update_cost()">+</button>\par
+                  </div>\par
+                </h4>\par
+                <h6>\'803.99</h6>\par
+                <img src="../images/menu_images/ham_and_cheese_sandwich.png" alt="Soup Picture" width="200px">\par
+                <p>Our tasty tasty meals are all homemade in house today, <i>if you have any allergy requirements please contact a member of staff for more information</i></p>\par
+\par
+                <h4 id="list-item-4">\par
+                  Soup Of The Day\par
+                  <div class="btn-group" role="group" aria-label="Basic example">\par
+                  <button type="button" class="btn btn-primary" onclick="item_remove_dish4(),update_cost()">-</button>\par
+                  <div class="btn btn-primary" id="item4">0</div>\par
+                  <button type="button" class="btn btn-primary" onclick="item_add_dish4(),update_cost()">+</button>\par
+                  </div>\par
+                </h4>\par
+\par
+JS\par
+\par
+let dish1quant = 0;\par
+let dish2quant = 0;\par
+let dish3quant = 0;\par
+let dish4quant = 0;\par
+let dish5quant = 0;\par
+let dish6quant = 0;\par
+let dish7quant = 0;\par
+let dish8quant = 0;\par
+let dish9quant = 0;\par
+let dish10quant = 0;\par
+let cost = 0;\par
+let total = 0;\par
+let printTime = 0;\par
+let finishTime = 0;\par
+\par
+\par
+paymentScreen.style.display = "none";\par
+\par
+function item_add_dish1()\{\par
+    dish1quant = dish1quant + 1;\par
+    document.getElementById("item1").innerHTML = dish1quant;\par
+\}\par
+function item_remove_dish1()\{\par
+    if(dish1quant > 0)\{dish1quant = dish1quant - 1;\}\par
+    document.getElementById("item1").innerHTML = dish1quant;\par
+\}\par
+\par
+function item_add_dish2()\{\par
+    dish2quant = dish2quant + 1;\par
+    document.getElementById("item2").innerHTML = dish2quant;\par
+\}\par
+function item_remove_dish2()\{\par
+    if(dish2quant > 0)\{dish2quant = dish2quant - 1;\}\par
+    document.getElementById("item2").innerHTML = dish2quant;\par
+\}\par
+\par
+function item_add_dish3()\{\par
+    dish3quant = dish3quant + 1;\par
+    document.getElementById("item3").innerHTML = dish3quant;\par
+\}\par
+function item_remove_dish3()\{\par
+    if(dish3quant > 0)\{dish3quant = dish3quant - 1;\}\par
+    document.getElementById("item3").innerHTML = dish3quant;\par
+\}\par
+\par
+function item_add_dish4()\{\par
+    dish4quant = dish4quant + 1;\par
+    document.getElementById("item4").innerHTML = dish4quant;\par
+\}\par
+function item_remove_dish4()\{\par
+    if(dish4quant > 0)\{dish4quant = dish4quant - 1;\}\par
+    document.getElementById("item4").innerHTML = dish4quant;\par
+\}\par
+\par
+function item_add_dish5()\{\par
+    dish5quant = dish5quant + 1;\par
+    document.getElementById("item5").innerHTML = dish5quant;\par
+\}\par
+function item_remove_dish5()\{\par
+    if(dish5quant > 0)\{dish5quant = dish5quant - 1;\}\par
+    document.getElementById("item5").innerHTML = dish5quant;\par
+\}\par
+\par
+function item_add_dish6()\{\par
+    dish6quant = dish6quant + 1;\par
+    document.getElementById("item6").innerHTML = dish6quant;\par
+\}\par
+function item_remove_dish6()\{\par
+    if(dish6quant > 0)\{dish6quant = dish6quant - 1;\}\par
+    document.getElementById("item6").innerHTML = dish6quant;\par
+\}\par
+\par
+function item_add_dish7()\{\par
+    dish7quant = dish7quant + 1;\par
+    document.getElementById("item7").innerHTML = dish7quant;\par
+\}\par
+function item_remove_dish7()\{\par
+    if(dish7quant > 0)\{dish7quant = dish7quant - 1;\}\par
+    document.getElementById("item7").innerHTML = dish7quant;\par
+\}\par
+\par
+function item_add_dish8()\{\par
+    dish8quant = dish8quant + 1;\par
+    document.getElementById("item8").innerHTML = dish8quant;\par
+\}\par
+function item_remove_dish8()\{\par
+    if(dish8quant > 0)\{dish8quant = dish8quant - 1;\}\par
+    document.getElementById("item8").innerHTML = dish8quant;\par
+\}\par
+\par
+function item_add_dish9()\{\par
+    dish9quant = dish9quant + 1;\par
+    document.getElementById("item9").innerHTML = dish9quant;\par
+\}\par
+function item_remove_dish9()\{\par
+    if(dish9quant > 0)\{dish9quant = dish9quant - 1;\}\par
+    document.getElementById("item9").innerHTML = dish9quant;\par
+\}\par
+\par
+CSS\par
+  /*\par
+            Styling for carousel to size carousel items, size background image and reduce opacity of background image - Fionn McCarthy\par
+        */\par
+        .active \{  /* Color for active navbar items */\par
+            color: #212529;\par
+        \}\par
+        .container \{  /* Layout for carousel container */\par
+            position: absolute;\par
+            bottom: 0;\par
+            padding-bottom: 30px;\par
+            left: 0;\par
+            right: 0;\par
+        \}\par
+        .carousel-item \{  /* Formatting for background color and text color on slides */\par
+            height: 32rem;\par
+            background: black;\par
+            color: white;\par
+            position: relative;\par
+        \}\par
+        .overlay-image \{  /* Positioning of background image to center image on slides */\par
+            position: absolute;\par
+            bottom: 0;\par
+            left: 0;\par
+            right: 0;\par
+            top: 0;\par
+            opacity: 0.5;\par
+            background-position: center;\par
+            background-size: cover;\par
+        \}\par
+        /*-------------------------------*/\par
+}
+ 
