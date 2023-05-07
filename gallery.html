@@ -6,51 +6,73 @@
   <head>
     <meta charset="utf-8">
      <meta name="viewport" content="width=device-width, initial-scale=1">
-     <title>Photography Gallery | Shayanny</title>
+     <title>Shayanny Photography  | Gallery </title>
      <link href=https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
      <link href="css/style.css" rel="stylesheet">
  </head>
+ <style>
+  p {
+     margin-bottom: 20px;
+     position: relative; left: 145px;
+     color: #e45f92;
+     }
+
+     p:hover{
+      color: #689eca;
+     }
+     button{
+      position: relative; left: 105px;
+     }
+
+
+ </style>
+ <script src="js/JavaScriptCode.js"></script>
  <body>
-    <nav class="navbar navbar-expand-lg nav-bg-color">
-        <div class="container-fluid">
-         <div class="collapse navbar-collapse" id="navbarSupportedContent">
-           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                 <a class="nav-link" href="index.html">Home</a>
-               </li>
-                  <li class="nav-item">
-                     <a class="nav-link" href="gallery.html">Gallery</a>
-                       </li>
-                         <li class="nav-item">
-                             <a class="nav-link"> Cart</a>
-                         </li>
-                         <li class = "nav-item">
-                           <a class = "nav-link"> About Us </a>
    
-                         </li>
-                      </ul>
-                  </div>
-         </div>
-       </nav>
+  <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container-fluid">
+      <ul class="navbar-nav">
+        <a class="navbar-brand" href="index.html">
+          <img src="img/images.png" alt="Logo" width="30" height="24" class="d-inline-block align-text-top nav-image" id="to-top" > </a>
+          <h1 class ="logo-text" style="color:white"> Shayanny Photography </h1>
+      <li class="nav-item">
+        <a class="nav-link active" aria-current="page" href="index.html" style="color:white">Home</a>
+      </li>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+          <li class="nav-item">
+            <a class="nav-link active " aria-current="page" href="gallery.html "  style="color:white">Gallery</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="cart.html"  style="color:white"> Cart</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+
 
        <div class="container mt-5">
         <div class="row">
           <div class="col-sm-4">
             <p></p>
-            <img src="img/82C1EA27-233E-492C-8A17-7B4486CD47ED.jpeg" alt="Photo 1" height="200" width="330" vspace="10" >
-            <p></p>
+            <img src="img/82C1EA27-233E-492C-8A17-7B4486CD47ED.jpeg" alt="Photo 1" height="200" width="330" vspace="10">
+            <p>Ukiyo<button onclick="popup()" type="button" class="btn btn-outline-info">+</button></p>
           </div>
           <div class="col-sm-4">
             <p></p>
             <img src="img/F03D701A-7838-4C2E-AEC8-FAEED0F1CD72.jpeg" alt="Photo 2" height="200" width="330" vspace="10" >
-            <p></p>
+            <p>Museu<button onclick="popup()" type="button" class="btn btn-outline-info">+</button></p>
           </div>
           <div class="col-sm-4">
             <p></p>
             <img src="img/IMG_2080.JPG" alt="Photo 3" height="200" width="330" vspace="10" >
-            <p></p>
+            <p>Playa<button onclick="popup()" type="button" class="btn btn-outline-info">+</button></p>
 
           </div>
         </div>
@@ -59,21 +81,21 @@
             <div class="col-sm-4">
                 <p></p>
                 <img src="img/CA0F80B5-6004-438D-ACAF-A342354F3E83.jpeg" alt="Photo 6" height="260" width="200" hspace="65" vspace="10">
-                <p></p>
+                <p>Work<button onclick="popup()" type="button" class="btn btn-outline-info">+</button></p>
                 
             </div>
 
             <div class="col-sm-4">
                 <p></p>
                 <img src="img/E36A0940-ABC9-444A-9A33-4E474AD3A748.jpeg" alt="Photo 6" height="260" width="200" hspace="65" vspace="10">
-                <p></p>
+                <p>Rest<button onclick="popup()" type="button" class="btn btn-outline-info">+</button></p>
   
             </div>
 
             <div class="col-sm-4">
                 <p></p>
                 <img src="img/4488BB4C-7218-4921-B368-D1357AFB8FE8.jpeg" alt="Photo 6" height="260" width="200" hspace="65" vspace="10">
-                <p></p>
+                <p>Spring<button onclick="popup()" type="button" class="btn btn-outline-info">+</button></p>
             </div>
            
           </div>
@@ -82,19 +104,19 @@
             <div class="col-sm-4">
                 <p></p>
                 <img src="img/IMG_3817.JPG" alt="Photo 4" height="200" width="330" vspace="10">
-                <p></p>
+                <p>Church<button onclick="popup()" type="button" class="btn btn-outline-info">+</button></p>
     
             </div>
             <div class="col-sm-4">
                 <p></p>
                 <img src="img/F2E8FB12-13DA-4942-A154-6C5DC1C5FEB6.jpeg" alt="Photo 5" height="200" width="330" vspace="10">
-                <p></p>
+                <p>Sail<button onclick="popup()" type="button" class="btn btn-outline-info">+</button></p>
     
             </div>
             <div class="col-sm-4">
                 <p></p>
                 <img src="img/65141869-8C27-418B-BB7B-CFC1B5EA5342.jpeg" alt="Photo 6" height="200" width="330" vspace="10">
-                <p></p>
+                <p>Tema<button onclick="popup()" type="button" class="btn btn-outline-info">+</button></p>
     
   
             </div>
@@ -104,19 +126,19 @@
             <div class="col-sm-4">
                 <p></p>
                 <img src="img/61016D17-A2C8-4CA1-850E-224A7FDB3699.jpg" alt="Photo 6" height="260" width="200" hspace="65" vspace="10">
-                <p></p>
+                <p>Gato Un<button onclick="popup()" type="button" class="btn btn-outline-info">+</button></p>
                 
             </div>
             <div class="col-sm-4">
                 <p></p>
                 <img src="img/PSX_20230103_025240.jpeg" alt="Photo 6" height="260" width="200" hspace="65" vspace="10">
-                <p></p>
+                <p>Gato Dos<button onclick="popup()" type="button" class="btn btn-outline-info">+</button></p>
               
             </div>
             <div class="col-sm-4">
                 <p></p>
                 <img src="img/9597AE17-9D38-477F-99C1-36B9177FB35D.jpg" alt="Photo 6" height="260" width="200" hspace="65" vspace="10">
-                <p></p>
+                <p>Gato Tres<button onclick="popup()" type="button" class="btn btn-outline-info">+</button></p>
   
             </div>
           </div>
@@ -126,17 +148,17 @@
             <div class="col-sm-4">
                 <p></p>
                 <img src="img/IMG_2078.JPG" alt="Photo 6" height="200" width="330" vspace="10">
-                <p></p>
+                <p>Ponte<button onclick="popup()" type="button" class="btn btn-outline-info">+</button></p>
             </div>
             <div class="col-sm-4">
                 <p></p>
                 <img src="img/Foto 2023-04-24 01.54.04 PM.jpg" alt="Photo 6" height="200" width="330" vspace="10">
-                <p></p>
+                <p>Albufeira<button onclick="popup()" type="button" class="btn btn-outline-info">+</button></p>
             </div>
             <div class="col-sm-4">
                 <p></p>
                 <img src="img/AEBE28C1-D02A-49F1-84BC-7F2B7B911A53.jpeg" alt="Photo 6" height="200" width="330" vspace="10">
-                <p></p>
+                <p>Paixao<button onclick="popup()" type="button" class="btn btn-outline-info">+</button></p>
   
             </div>
           </div>
@@ -145,18 +167,18 @@
             <div class="col-sm-4">
                 <p></p>
                 <img src="img/5A3ED0AA-CE5C-43E7-B5A0-0C36DC80B737.jpeg" alt="Photo 6" height="260" width="200" hspace="65" vspace="10">
-                <p></p>
+                <p>Andando<button onclick="popup()" type="button" class="btn btn-outline-info">+</button></p>
                 
             </div>
             <div class="col-sm-4">
                 <p></p>
                 <img src="img/4EC5B72E-E36D-4818-B0C5-C7D0D6DDD50A.jpeg" alt="Photo 6" height="260" width="200" hspace="65" vspace="10">
-                <p></p>
+                <p>Rosa<button onclick="popup()" type="button" class="btn btn-outline-info">+</button></p>
             </div>
             <div class="col-sm-4">
                 <p></p>
                 <img src="img/9A05B435-F8E0-4BCE-9AE6-665F04B7DC13.jpeg" alt="Photo 6" height="260" width="200" hspace="65" vspace="10">
-                <p></p>
+                <p>Mis Flores<button onclick="popup()" type="button" class="btn btn-outline-info">+</button></p>
   
             </div>
           </div>
@@ -166,17 +188,17 @@
          <div class="col-sm-4">
             <p></p>
             <img src="img/3D26C00D-EE77-4AC9-AE3B-9F02D6F35109.jpeg" alt="Photo 6" height="200" width="330" vspace="10">
-            <p></p>
+            <p>Valentino<button onclick="popup()" type="button" class="btn btn-outline-info">+</button></p>
          </div>
          <div class="col-sm-4">
             <p></p>
             <img src="img/5A86DD70-EA92-4594-877D-4BB97EDFB907.jpeg" alt="Photo 6" height="200" width="330" vspace="10">
-            <p></p>
+            <p>Travel<button onclick="popup()" type="button" class="btn btn-outline-info">+</button></p>
          </div>
          <div class="col-sm-4">
             <p></p>
             <img src="img/56D3CB1B-71D3-444A-A304-719F0E9B874B.jpeg" alt="Photo 6" height="200" width="330" vspace="10">
-            <p></p>
+            <p>Summer<button onclick="popup()" type="button" class="btn btn-outline-info">+</button></p>
 
         </div>
         </div>
@@ -185,18 +207,18 @@
             <div class="col-sm-4">
                 <p></p>
                 <img src="img/BA2C30F1-99BF-4CFA-A596-2A495B4BF0E6.jpeg" alt="Photo 6" height="260" width="200" hspace="65" vspace="10">
-                <p></p>
+                <p>Moda<button onclick="popup()" type="button" class="btn btn-outline-info">+</button></p>
                 
             </div>
             <div class="col-sm-4">
                 <p></p>
                 <img src="img/FED35B43-8C28-43E1-A1FA-278A703F7E64.jpeg" alt="Photo 6" height="260" width="200" hspace="65" vspace="10">
-                <p></p>
+                <p>Cereja<button onclick="popup()" type="button" class="btn btn-outline-info">+</button></p>
             </div>
             <div class="col-sm-4">
                 <p></p>
                 <img src="img/IMG_4420.JPG" alt="Photo 6" height="260" width="200" hspace="65" vspace="10">
-                <p></p>
+                <p>Agua<button onclick="popup()" type="button" class="btn btn-outline-info">+</button></p>
   
             </div>
           </div>
@@ -205,17 +227,17 @@
             <div class="col-sm-4">
                <p></p>
                <img src="img/35DEF6FC-120A-41C5-80D3-C3C0A749606C.jpeg" alt="Photo 6" height="200" width="330" vspace="10">
-               <p></p>
+               <p>ikagai<button onclick="popup()" type="button" class="btn btn-outline-info">+</button></p>
             </div>
             <div class="col-sm-4">
                <p></p>
                <img src="img/054A706E-C425-45A4-AD42-47BB5509E558.jpg" alt="Photo 6" height="200" width="330" vspace="10">
-               <p></p>
+               <p>Hemi<button onclick="popup()" type="button" class="btn btn-outline-info">+</button></p>
             </div>
             <div class="col-sm-4">
                <p></p>
                <img src="img/382896F5-6F4C-40E2-91B5-234041EBC681.jpeg" alt="Photo 6" height="200" width="330" vspace="10">
-               <p></p>
+               <p>u-key-yo<button onclick="popup()" type="button" class="btn btn-outline-info">+</button></p>
 
            </div>
         </div>
@@ -224,17 +246,17 @@
             <div class="col-sm-4">
                <p></p>
                <img src="img/746843E3-EECD-4DF0-A276-5FFC6AF3023B.jpeg" alt="Photo 6" height="200" width="330" vspace="10">
-               <p></p>
+               <p>Imagine<button onclick="popup()" type="button" class="btn btn-outline-info">+</button></p>
             </div>
             <div class="col-sm-4">
                <p></p>
                <img src="img/82E7C18C-BF42-4D7E-BD53-9A50D20B4AD7.jpeg" alt="Photo 6" height="200" width="330" vspace="10">
-               <p></p>
+               <p>Cereza<button onclick="popup()" type="button" class="btn btn-outline-info">+</button></p>
             </div>
             <div class="col-sm-4">
                <p></p>
                <img src="img/493ACF42-406A-4E0A-95D1-47E32F108CB2.jpeg" alt="Photo 6" height="200" width="330" vspace="10">
-               <p></p>
+               <p>Gandia<button onclick="popup()" type="button" class="btn btn-outline-info">+</button></p>
 
            </div>
         </div>
@@ -243,20 +265,33 @@
             <div class="col-sm-4">
                <p></p>
                <img src="img/84B5FD03-46E2-4417-BEC7-63174788E2E9.jpeg" alt="Photo 6" height="200" width="330" vspace="10">
-               <p></p>
+               <p>Galway<button onclick="popup()" type="button" class="btn btn-outline-info">+</button></p>
             </div>
             <div class="col-sm-4">
                <p></p>
                <img src="img/7516835136_IMG_0581.JPG" alt="Photo 6" height="200" width="330" vspace="10">
-               <p></p>
+               <p>Love<button onclick="popup()" type="button" class="btn btn-outline-info">+</button></p>
             </div>
             <div class="col-sm-4">
                <p></p>
                <img src="img/IMG_5398.JPG" alt="Photo 6" height="200" width="330" vspace="10">
-               <p></p>
+               <p>Branco<button onclick="popup()" type="button" class="btn btn-outline-info">+</button></p>
 
            </div>
         </div>
+
+        <!-- Footer Coded by Fionn McGoldrick on the 25th April-->
+      <div class="card">
+      <div class="card-header">
+        Copyright © 2023 Shayanny. All rights reserved.
+      </div>
+      <div class="card-body">
+        <i><p class=" pay-option-text" >We accept the following payment methods.</p></i>
+        <br>
+        <img class = "pay-option-images" src="img/USPaymentMethodsKlarna.JPG">
+        <a href="#to-top" class="btn back-to-top-button">Back to top!</a>
+       </div>
+      </div>
     
         
           
